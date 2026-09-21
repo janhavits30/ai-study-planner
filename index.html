@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🤖 AI Study Planner</h1>
+        <p>Personalized study planning made simple</p>
+    </header>
+
+    <main>
+
+        <section class="planner-card">
+
+            <h2>Create Your Study Plan</h2>
+
+            <form id="studyForm">
+
+                <label for="studentName">Student Name</label>
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="subjects">Subjects</label>
+                <input
+                    type="text"
+                    id="subjects"
+                    placeholder="Example: Physics, Chemistry, Maths"
+                    required
+                >
+
+                <label for="hours">Available Study Hours Per Day</label>
+                <input
+                    type="number"
+                    id="hours"
+                    min="1"
+                    max="24"
+                    placeholder="Example: 5"
+                    required
+                >
+
+                <label for="examDate">Exam Date</label>
+                <input
+                    type="date"
+                    id="examDate"
+                    required
+                >
+
+                <label for="goal">Exam Goal</label>
+                <select id="goal" required>
+                    <option value="">Select your goal</option>
+                    <option value="pass">Pass the Exam</option>
+                    <option value="good">Score 75%+</option>
+                    <option value="excellent">Score 90%+</option>
+                </select>
+
+                <button type="submit">
+                    Generate Study Plan ✨
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section id="result" class="result-card">
+
+            <h2>Your Personalized Study Plan</h2>
+
+            <div id="welcomeMessage"></div>
+
+            <div id="studyPlan"></div>
+
+            <div id="recommendations"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>AI Study Planner | Capstone Project</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
